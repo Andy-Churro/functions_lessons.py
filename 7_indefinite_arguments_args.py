@@ -13,3 +13,23 @@
 # The function should return the following message:
 
 # "{name}, the sum of your numbers is {sum_numbers}"
+def display_name(*args):
+#     for arg in args:
+#         print(arg, end="-")
+
+# display_name("Dr.", "spongebob", "Harold", "Squarepants", "III")
+
+# def print_adress(**kwargs):
+#     for value in kwargs.values():
+#         print(value)
+
+# print_adress(street="123 Fake St.", apt="100", city= 'The raq', state="Illinois", zipcode="60638")
+
+def shipping_label(*args, **kwargs):
+    pass
+    for arg in args: 
+    print(arg, end=" ")
+    print()
+    for value in kwargs.values():
+        print(value, end=" ")
+shipping_label("Dr.", "Spongebob", "squarepants", "III", street="123 Fake St.", apt="100", city= 'The raq', state="Illinois", zipcode="60638" )

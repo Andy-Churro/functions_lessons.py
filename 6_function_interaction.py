@@ -1,3 +1,16 @@
+# args allow you to pass multiple non key arguments
+# kwargs allow you to pass multiple keyword arguments
+def add(*args):
+    total=0
+    for arg in args:
+        total+=arg
+    return total
+
+print(add(1,2,3,4))
+
+
+
+
 # Interactions Between Functions Practice #1
 # Create a function (throw_dice) that "throws" two random dice and returns its results (the function MUST RETURN TWO VALUES AS A RESULT, both of which must be between 1 and 6, randomly).
 
